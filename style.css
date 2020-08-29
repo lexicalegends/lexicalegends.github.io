@@ -1,0 +1,39 @@
+.l {
+  font-size: 1500%;
+  float: left;
+  width: 40%;
+  text-align: right;
+}
+.spans {
+  margin-top: 1%;
+  font-size: 500%;
+  width: 60%;
+  float: left;
+}
+.spans:nth-child(2) {
+  margin-top: 2%;
+}
+.logo {
+  transition: 1s;
+  transform: translate(0px, -15px);
+}
+.logo:hover {
+  transform: translate(0, 0);
+  opacity: 0.6;
+}
+.sub {
+  margin-top: 5%;
+  font-size: 350%;
+  transition-delay: 1s;
+  transition: 1.5s;
+  font-weight: lighter;
+    transform: translate(0px, -15px);
+}
+.sub:hover {
+    transform: translate(0, 0);
+  opacity: 0.6;
+}
+body {
+  background-color: black;
+  color: #cccccc;
+}
