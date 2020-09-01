@@ -32,5 +32,5 @@ function read() {
   for (var i = 0; i < content.length; i++) {
     link += "#//" + order[i].value + "#//" + content[i].value;
   }
-  document.body.innerHTML += link;
+  document.body.innerHTML += "<a href='" + link + "'>Go to your game</a>";
 }
