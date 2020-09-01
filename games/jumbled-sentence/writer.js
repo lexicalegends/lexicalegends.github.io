@@ -13,7 +13,7 @@ function tableContent() {
     }
     table1 += "</tr>"
   }
-  document.getElementById('contentTable').innerHTML = "<tr><th colspan=2>Add the jumbled sentences here.</th></tr>" + table1 + '    <button type="button" onclick="tableOrder()">Go!</button>';
+  document.getElementById('contentTable').innerHTML = "<tr><th colspan=" + document.getElementById('collumn').value + ">Add the jumbled sentences here.</th></tr>" + table1 + '    <button type="button" onclick="tableOrder()">Go!</button>';
 }
 function tableOrder() {
   var table3 = "";
@@ -24,7 +24,7 @@ function tableOrder() {
     }
     table3 += "</tr>"
   }
-  document.getElementById('orderTable').innerHTML = "<tr><th colspan=2>Type the order of the cells here.</th></tr>" +  table3 + '    <button type="button" onclick="read()">Go!</button>';;
+  document.getElementById('orderTable').innerHTML = "<tr><th colspan=" + document.getElementById('collumn').value + ">Type the order of the cells here.</th></tr>" +  table3 + '    <button type="button" onclick="read()">Go!</button>';;
 }
 function read() {
   content = document.getElementsByClassName("content");
