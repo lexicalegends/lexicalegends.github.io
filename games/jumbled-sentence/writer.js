@@ -1,4 +1,4 @@
-var link = "game.html";
+var link = "/games/jumbled-sentence/";
 var content;
 var order;
 function tableContent() {
