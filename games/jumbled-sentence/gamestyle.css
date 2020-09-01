@@ -1,0 +1,48 @@
+table {
+  border-collapse: collapse;
+  border-color: black;
+  text-align: center;
+  background-color: #352222;
+  box-shadow: 4px 6px 8px 5px #202020;
+}
+td {
+  padding: 20px;
+  font-size: 115%;
+}
+td a {
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+}
+td a:hover {
+  color: #ffffff;
+}
+body {
+  background-color: #222235;
+  color: #bbbbbb;
+  font-size: 165%;
+  font-family: lato, arial, sans-serif;
+}
+.main {
+  background-color: #223522;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3.5%;
+  width: 80%;
+  height: 100%;
+}
+#messg, #sntce {
+  background-color: #aaaaaa;
+  color: black;
+  border: 3px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  float: left;
+  margin: 1%;
+}
+#sntce {
+  width: 80%;
+}
+#messg {
+  width: 10%;
+}
