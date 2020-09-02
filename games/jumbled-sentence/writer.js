@@ -20,7 +20,7 @@ function tableOrder() {
   for (var i = 0; i < document.getElementById('collumn').value; i++) {
     table3 += "<tr>";
     for (var j = 0; j < document.getElementById('row').value; j++) {
-      table3 += "<td><input type='number' min='-1' max='100' class='order'></td>";
+      table3 += "<td><input type='number' value=0 class='order'></td>";
     }
     table3 += "</tr>"
   }
