@@ -9,7 +9,7 @@ function tableContent() {
   for (var i = 0; i < document.getElementById('collumn').value; i++) {
     table1 += "<tr>";
     for (var j = 0; j < document.getElementById('row').value; j++) {
-      table1 += "<td><input value=' ' class='content'></td>";
+      table1 += "<td><input value='&nbsp' class='content'></td>";
     }
     table1 += "</tr>"
   }
@@ -20,11 +20,11 @@ function tableOrder() {
   for (var i = 0; i < document.getElementById('collumn').value; i++) {
     table3 += "<tr>";
     for (var j = 0; j < document.getElementById('row').value; j++) {
-      table3 += "<td><input type='number' value=0 class='order'></td>";
+      table3 += "<td><input type='number' class='order'></td>";
     }
     table3 += "</tr>"
   }
-  document.getElementById('orderTable').innerHTML = "<tr><th colspan=" + document.getElementById('collumn').value + ">Type the order of the cells here.</th></tr>" +  table3 + '    <button type="button" onclick="read()">Go!</button>';;
+  document.getElementById('orderTable').innerHTML = "<tr><th colspan=" + document.getElementById('collumn').value + ">Type the order of the cells here (use '0' for blank cells).</th></tr>" +  table3 + '    <button type="button" onclick="read()">Go!</button>';;
 }
 function read() {
   content = document.getElementsByClassName("content");
