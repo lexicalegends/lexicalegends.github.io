@@ -5,6 +5,7 @@ data.shift();
 var counter = 3;
 var table = "";
 document.getElementById('heading').innerHTML = data[0];
+document.title = data[0];
 for (var i = 0; i < data[1]; i++) {
   table += "<tr>";
   for (var j = 0; j < data[2]; j++) {
