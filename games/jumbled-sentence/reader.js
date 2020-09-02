@@ -1,4 +1,5 @@
 var data = location.href;
+data = decodeURIComponent(data);
 data = data.split("#//");
 data.shift();
 var counter = 3;
