@@ -9,11 +9,11 @@ function tableContent() {
   for (var i = 0; i < document.getElementById('collumn').value; i++) {
     table1 += "<tr>";
     for (var j = 0; j < document.getElementById('row').value; j++) {
-      table1 += "<td><input value='&nbsp;' class='content'></td>";
+      table1 += "<td><input value='' class='content'></td>";
     }
     table1 += "</tr>"
   }
-  document.getElementById('contentTable').innerHTML = "<tr><th colspan=" + document.getElementById('collumn').value + ">Add the jumbled sentences here.</th></tr>" + table1 + '    <button type="button" onclick="tableOrder()">Go!</button>';
+  document.getElementById('contentTable').innerHTML = "<tr><th colspan=" + document.getElementById('collumn').value + ">Add the jumbled sentences here (type a space for blank cells).</th></tr>" + table1 + '    <button type="button" onclick="tableOrder()">Go!</button>';
 }
 function tableOrder() {
   var table3 = "";
