@@ -2,8 +2,7 @@ table {
   border-collapse: collapse;
   border-color: black;
   text-align: center;
-  background-color: #352222;
-  box-shadow: 4px 6px 8px 5px #202020;
+  background-color: #253c25;
 }
 td {
   padding: 20px;
@@ -21,7 +20,7 @@ body {
   background-color: #222235;
   color: #bbbbbb;
   font-size: 165%;
-  font-family: 'Lato', arial, sans-serif;
+  font-family: 'Oleo Script', arial, sans-serif;
 }
 .main {
   background-color: #223522;
