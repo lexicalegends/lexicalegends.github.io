@@ -3,8 +3,8 @@ var content;
 var order;
 function tableContent() {
   link += "#//" + document.getElementById('title').value;
-  link += "#//" + document.getElementById('collumn').value;
   link += "#//" + document.getElementById('row').value;
+  link += "#//" + document.getElementById('collumn').value;
   var table1 = "";
   for (var i = 0; i < document.getElementById('collumn').value; i++) {
     table1 += "<tr>";
