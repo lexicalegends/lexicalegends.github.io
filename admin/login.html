@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Log in as Admin</h1>
+    <input type="password" id="password"><button type="button" onclick="login()">Confirm</button>
+    <script type="text/javascript">
+      if (localStorage.admin = "true") {
+        document.body.innerHTML = "You're an admin";
+      }
+      function login() {
+        if (document.getElementById('password').value = "rkay2525") {
+          localStorage.setItem("admin", "true");
+          document.body.innerHTML += "<br>Logged in!";
+        } else {
+          document.body.innerHTML += "<br>Sorry, password incorrect";
+        }
+      }
+    </script>
+  </body>
+</html>

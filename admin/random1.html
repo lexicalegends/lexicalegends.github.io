@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button onclick="gen()">Generate random students</button>
+    <em id='stud'></em>
+    <script type="text/javascript">
+      var grIII = ['Anjana', 'Eshaan', 'Lavanya', 'Lakshnaa', 'Pujita', 'Yashashree', 'Surya', 'Tiana', 'Vishruth', 'Vidyuth', 'Shruthika'];
+      var grIV = ['Andria', 'Dhaanya', 'Lohit', 'Nidassana', 'Prathik', 'Prem', 'Sai Vedant', 'Thaneesha', 'Sahana', 'Sendil'];
+      var grV = ['Anirudh', 'Ashish', 'Harshita', 'Swati', 'Sahithi', 'Sumaiya', 'Vamsi'];
+      function gen() {
+        var rand = "<br><br> Grade 3: " + grIII[Math.floor(Math.random() * 11)] + "<br> Grade 4: " + grIV[Math.floor(Math.random() * 10)] + "<br> Grade 5: " + grV[Math.floor(Math.random() * 7)];
+        document.getElementById('stud').innerHTML = rand;
+      }
+      if (localStorage.getItem('admin') != "true") {
+        location.href = "login.html";
+      }
+    </script>
+  </body>
+</html>
