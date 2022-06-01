@@ -1,3 +1,16 @@
+var gName = location.href;
+gName = gName.split("#");
+gName.shift();
+
+
+  var newScript = document.createElement("script");
+  newScript.src = gName + ".js";
+  document.body.appendChild(newScript);
+
+var newScript = document.createElement("script");
+newScript.src = gName + ".js";
+document.body.appendChild(newScript);
+
 var counter;
 function print(x, y) {
   counter = 0;
