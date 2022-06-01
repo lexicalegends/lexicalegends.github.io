@@ -13,10 +13,14 @@ function print(x, y) {
     table += "</tr>"
 }
 document.getElementById("board").innerHTML = table;
-document.getElementById('ans').innerHTML = ""
-
 }
-print(Math.floor(Math.random() * 9) + 2,Math.floor(Math.random() * 9) + 2)
+
+var cont = 0
+function getMult() {
+  print(mult[cont][0], mult[cont][1]);
+  cont++;
+}
+
 function reveal() {
   var divs = document.getElementsByClassName( 'square' );
 
@@ -26,5 +30,8 @@ function reveal() {
 });
 document.getElementById('width').innerHTML = "<h2>The area of the rectangle is " + counter + "</h2>"
 document.getElementById('height').innerHTML = ""
+if (cont == mult.length) {
+  document.getElementById('width').innerHTML += "<h3>Game over</h3>"
+}
 
 }

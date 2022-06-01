@@ -9,7 +9,7 @@ body {
   width: 75%;
   padding: 1%;
   background-color: #d0d0d0;
-  border: solid 1px black;
+  border-radius: 25px;
   margin: auto;
   text-align: center;
   height: fit-content;
