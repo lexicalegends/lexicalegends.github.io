@@ -29,7 +29,7 @@ document.getElementById("board").innerHTML = table;
 }
 
 var cont = 0
-function getMult() {
+function getMult() { 
   print(mult[cont][0], mult[cont][1]);
   cont++;
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <label>Number of problems: </label><input type="number" id="no"><button type="button" onclick="gen()" name="button">Generate form</button>
+    <div id="form">
+    </div>
+    <code id="op"></code>
+<script type="text/javascript">
+  //ask for number of questions, create forms with analogous ids
+  //then, read analoous ids with for loop.
+  function gen() {
+    for (var i = 0; i < document.getElementById("no").value; i++) {
+      document.getElementById('form').innerHTML += "<div class='gr'><input placeholder='rows' type='number' id='row-number-"+i+"'><input placeholder='columns' type='number' id='column-number-"+i+"'>"
+    }
+    document.getElementById('form').innerHTML += "<button onclick='read()'>Generate code</button>"
+  }
+  function read() {
+    var qs = []
+    for (var i = 0; i < document.getElementById("no").value; i++) {
+      var tab = [parseFloat(document.getElementById("row-number-" + i).value), parseFloat(document.getElementById("column-number-" +i).value)]
+      qs.push(tab)
+    }
+    var jqs =  JSON.stringify(qs)
+    document.getElementById('op').innerHTML = "var mult = " + jqs
+
+  }
+</script>
+  </body>
+</html>
